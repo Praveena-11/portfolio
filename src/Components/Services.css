@@ -1,0 +1,119 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.services-title{
+    position: relative;
+}
+.services-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:90px;
+    margin-bottom: 80px;
+}
+.services-format h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.services-format h2{
+    font-size: 38px;
+    font-weight: 800;
+    background-image: linear-gradient(135deg, #0d61ec 10%, #de0f82 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-format{
+    color: #d4d4d4;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 500px;
+}
+.services-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.services-format:hover{
+    border: 2px solid #7925f6;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+@media (max-width: 768px) {
+    .services {
+        margin: 40px 80px;
+        gap: 60px;
+    }
+
+    .services-title h1 {
+        font-size: 60px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .services-format h3 {
+        font-size: 24px;
+    }
+
+    .services-format h2 {
+        font-size: 32px;
+    }
+
+    .services-format {
+        font-size: 22px;
+    }
+}
+@media (max-width: 480px) {
+    .services {
+        margin: 20px;
+        gap: 40px;
+    }
+
+    .services-title h1 {
+        font-size: 40px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-format h3 {
+        font-size: 22px;
+    }
+
+    .services-format h2 {
+        font-size: 28px;
+    }
+
+    .services-format {
+        font-size: 20px;
+    }
+
+    .services-readmore {
+        font-size: 18px;
+    }
+}
